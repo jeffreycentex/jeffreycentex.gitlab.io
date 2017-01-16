@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="{{.Site.Params.author}}">
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
+    {{ if .Site.Params.google_site_verification }}<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}">{{end}}
+    {{ if .Site.Params.bing_site_verification }}<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}">{{end}}
+
+    {{ if .Site.Params.geo_position }}<meta name="geo.position" content="{{.Site.Params.geo_position}}">
+    <meta name="geo.placename" content = "{{.Site.Params.geo_placename}}">
+    <meta name="geo.region" content="{{.Site.Params.geo_region}}">{{end}}
+
+    <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.site_name}}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{.Site.Params.social.twitter}}" />
+    <meta name="twitter:creator" content="@{{.Site.Params.social.twitter}}" />
+    <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="twitter:image" content="" />
+
+    <link rel="icon" href="/images/favicon.ico">
+
+    <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    {{ if .Params.gallery }}<link href="/css/nanogallery2.css" rel="stylesheet" type="text/css">{{ end }}
+    <link href="/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    {{ "<!--[if lt IE 9]><script src='/js/ie8-responsive-file-warning.js'></script><![endif]-->" | safeHTML}}
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css" rel="stylesheet">
+
+    {{ "<!--[if lt IE 9]>" | safeHTML }}
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    {{ "<![endif]-->" | safeHTML }}
+    {{ block "css" .}}{{end}}
+  </head>

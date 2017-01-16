@@ -1,0 +1,12 @@
+name = "Mountains"
+license = "MIT"
+licenselink = "https://github.com/"
+description = "A Bootstrap-based theme with Sub-Menu, Audio, and Video Support..."
+homepage = "http://siteforthistheme.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.18
+
+[author]
+  name = "Jeffrey Randow"
+  homepage = "https://www.jeffreyrandow.org/"

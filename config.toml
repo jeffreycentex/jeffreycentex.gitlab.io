@@ -1,0 +1,116 @@
+# Hugo variables
+#
+baseurl = "https://jeffreycentex.gitlab.io"
+languageCode = "en-us"
+title = "Jeffreys Ruminations"
+theme = "mountains"
+# number of posts to show on home/category/tag pages (Default: 10)
+paginate = 10
+# optionally override the site's footer with custom copyright text
+# copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
+#googleAnalytics = "UA-123-45"
+#disqusShortname = "XYW"
+[params]
+  author = "Jeffrey Randow"
+  site_name = "Jeffreys Ruminations"
+  geo_position = "29.4; -98.1"
+  geo_placename = "New Braunfels, TX"
+  geo_region = "US-TX"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[params.social]
+  github          = "jeffreycentex"
+  facebook        = "jeffreycentex"
+  facebook_admin  = "17807199"  # This needs to be a page admin to get domain insights
+  twitter         = "nozzleio"
+  twitter_domain  = "nozzle.io" # This domain shows in twitter cards as "View on `twitter_domain`"
+  googleplus      = "NozzleIo"
+  pinterest       = "nozzleio"
+  instagram       = "nozzleio"
+  youtube         = "nozzleio"
+  linkedin        = "nozzleio"
+
+# NanoGallery
+# To add a Photogallery, specify gallery in your front manner.  Provide "full" for the full list, or the album # for
+# a specific gallery for that page.  The kind either is "google" or "flickr".  The userid can be obtained from the google
+# or flickr website.  For Google Photos, use nanogpvisbility to change the sharing for a particular album
+# (http://nanogpvisibility.herokuapp.com/).
+# You can also specify galluserid and gallkind in the front matter to override the settings here.
+[params.gallery]
+  userid = "105235561941690126130"
+  kind = "google"
+
+# Menus
+# Menus are special in this theme.  You can define dropdown menus by using a parent.  You can also place a separator
+# and a submenu header by using the identifier = "sep" and identifier = "head" for those menu items
+[[menu.main]]
+  name = "Home"
+  pre = "<i class='fa fa-home'></i>"
+  weight = 0
+  url = "/"
+[[menu.main]]
+  name = "Who Am I?"
+  pre = "<i class='fa fa-male'></i>"
+  weight = 1
+[[menu.main]]
+  name = "About Jeffrey"
+  url = "/about/"
+  weight = 0
+  parent = "Who Am I?"
+[[menu.main]]
+  name = "Contact Jeffrey"
+  url = "/about/contact/"
+  weight = 1
+  parent = "Who Am I?"
+[[menu.main]]
+  name = "Resumes and CV"
+  url = "/about/resumes/"
+  weight = 2
+  parent = "Who Am I?"
+[[menu.main]]
+    name = "Certificates/PGP"
+    url = "/about/certificates/"
+    weight = 3
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "Christianity"
+    url = "head"
+    weight = 5
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "My Beliefs"
+    url = "/aboutmychristianity/"
+    weight = 6
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "My Testimony"
+    url = "/christianity/testimony/"
+    weight = 7
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "About Accountability Groups"
+    url = "/accountability-public/"
+    weight = 8
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "Weather"
+    url = "head"
+    weight = 10
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "About My Weather Station"
+    url = "/weather/"
+    weight = 11
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "Weather Website"
+    url = "https://www.nbtx-wx.com/"
+    weight = 12
+    parent = "Who Am I?"
+[[menu.main]]
+    name = "Photo Gallery"
+    url = "/picasa/"
+    weight = 3
+    pre = "<i class='fa fa-camera'></i>"

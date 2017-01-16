@@ -1,0 +1,6 @@
+{{if .Params.gallery }}
+<div class="container">
+  <div class="panel panel-default">
+    {{if eq .Params.gallery "true"}}<div data-nanogallery2='{ "userID": "{{if .Params.galluserid }}{{.Params.galluserid}}{{else}}{{ .Site.Params.gallery.userid }}{{end}}","kind": "{{if .Params.gallkind }}{{.Params.gallkind}}{{else}}{{ .Site.Params.gallery.kind }}{{end}}","thumbnailWidth": "auto","thumbnailLabel": {"titleMultiLine": true} }'></div>{{else}}<div data-nanogallery2='{ "userID": "{{if .Params.galluserid }}{{.Params.galluserid}}{{else}}{{ .Site.Params.gallery.userid }}{{end}}","album":"{{ .Params.gallery }}","kind": "{{if .Params.gallkind }}{{.Params.gallkind}}{{else}}{{ .Site.Params.gallery.kind }}{{end}}","thumbnailWidth": "auto","thumbnailLabel": {"titleMultiLine": true} }'></div>{{end}}
+  </div>
+</div>{{end}}

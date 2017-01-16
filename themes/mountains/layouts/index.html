@@ -1,0 +1,55 @@
+{{ partial "header.html" . }}
+{{ partial "body.html" . }}
+<div class = "container">
+  <div class = "col-md-9">
+    {{ range .Paginator.Pages }}
+      {{ .Render "summary"}}
+      <hr/>
+    {{ end }}
+    {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+    <nav aria-label="pagination">
+      <ul class="pager">
+        {{ if and (.Paginator.HasPrev) (.Paginator.HasNext) }}
+        <li class="previous"><a href="{{ .Paginator.Prev.URL }}">&larr; Older</a></li>
+        <li class="next"><a href="{{ .Paginator.Next.URL }}">Newer &rarr;</a></li>{{ end }}
+        {{ if and (.Paginator.HasPrev) (not .Paginator.HasNext) }}<li class="previous"><a href="{{ .Paginator.Prev.URL }}">&larr; Older</a></li>
+        <li class="next disabled"><a href="">Newer &rarr;</a></li>{{ end }}
+        {{ if and (not .Paginator.HasPrev) (.Paginator.HasNext) }}<li class="previous disabled"><a href="">&larr; Older</a></li>
+        <li class="next"><a href="{{ .Paginator.Next.URL }}">Newer &rarr;</a></li>{{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  </div>
+  <div class = "col-md-3">
+        <div class="thumbnail">
+          <img src="/images/me.jpg" alt="" class="img-rounded">
+          <div class="caption text-center">
+            <h2>Jeffrey Randow</h2>
+            <h5>I'm a computer geek who is very introverted and hard to get along with.</h5>
+            <h4><a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;
+               <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;
+               <a href="http://www.github.com"><i class="fa fa-github"></i></a>&nbsp;
+               <a href="http://www.gitlab.com"><i class="fa fa-gitlab"></i></a>&nbsp;
+               <a href="http://www.bitbucket.com"><i class="fa fa-bitbucket"></i></a>&nbsp;
+               <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>&nbsp;
+            </h4>
+          </div>
+        </div>
+
+    <div class="sitelists">
+    <div class="panel list-group">
+      <a href="#" class="list-group-item" data-toggle="collapse" data-target="#taglist" data-parent="#sitelists">Tags</a>
+      <div id="taglist" class="sublinks collapse">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}<li class="list-group-item"><a href="/tags/{{ $name | urlize }}/">{{ $name | humanize }}</a></li>
+        {{ end }}
+      </div>
+      <a href="#" class="list-group-item" data-toggle="collapse" data-target="#catlist" data-parent="#sitelists">Categories</a>
+      <div id="catlist" class="sublinks collapse">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}<li class="list-group-item"><a href="/categories/{{ $name | urlize }}/">{{ $name | humanize }}</a></li>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
