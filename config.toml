@@ -11,11 +11,16 @@ paginate = 10
 #googleAnalytics = "UA-123-45"
 #disqusShortname = "XYW"
 [params]
-  author = "Jeffrey Randow"
   site_name = "Jeffreys Ruminations"
+  description = "The personal blog of Jeffrey Randow, New Braunfels, TX"
   geo_position = "29.4; -98.1"
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
+
+[params.author]
+  name = "Jeffrey Randow"
+  description = "OK, this is a test description..."
+  image = "/images/me.jpg"
 
 [permalinks]
   post = "/:year/:month/:title/"
@@ -23,14 +28,16 @@ paginate = 10
 [params.social]
   github          = "jeffreycentex"
   facebook        = "jeffreycentex"
-  facebook_admin  = "17807199"  # This needs to be a page admin to get domain insights
-  twitter         = "nozzleio"
-  twitter_domain  = "nozzle.io" # This domain shows in twitter cards as "View on `twitter_domain`"
-  googleplus      = "NozzleIo"
-  pinterest       = "nozzleio"
-  instagram       = "nozzleio"
-  youtube         = "nozzleio"
-  linkedin        = "nozzleio"
+  twitter         = "jeffreycentex"
+  googleplus      = "JeffreyRandow"
+  instagram       = "jeffreycentex"
+  youtube         = "jeffreycentex"
+  linkedin        = "jeffreyrandow"
+  gitlab          = "jeffreycentex"
+  bitbucket       = "jeffreycentex"
+  stackoverflow   = "1445912"
+  quora           = "Jeffrey-Randow-1"
+  fitbit          = "2G4MPX"
 
 # NanoGallery
 # To add a Photogallery, specify gallery in your front manner.  Provide "full" for the full list, or the album # for
