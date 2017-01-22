@@ -16,6 +16,7 @@ paginate = 10
   geo_position = "29.4; -98.1"
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
+  musiccdn = "https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/"
 
 [params.author]
   name = "Jeffrey Randow"
@@ -23,7 +24,8 @@ paginate = 10
   image = "/images/me.jpg"
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  post = "/:section/:title"
+
 
 [params.social]
   github          = "jeffreycentex"
@@ -38,6 +40,10 @@ paginate = 10
   stackoverflow   = "1445912"
   quora           = "Jeffrey-Randow-1"
   fitbit          = "2G4MPX"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 # NanoGallery
 # To add a Photogallery, specify gallery in your front manner.  Provide "full" for the full list, or the album # for

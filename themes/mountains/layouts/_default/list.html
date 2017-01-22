@@ -2,6 +2,9 @@
 {{ partial "body.html" . }}
 <div class = "container" role="main">{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
   <h1 id="title">{{ .Title }}</h1>
+  {{if .Params.category_desc }}<div class="alert alert-info" role="alert">
+      {{ .Params.category_desc | markdownify }}
+  </div>{{end}}
   <ul class="list-group">
     <li class="list-group-item list-group-item-success">List of Archive Pages by Date in "{{.Title}}"</li>
   {{ range .Data.Pages }}

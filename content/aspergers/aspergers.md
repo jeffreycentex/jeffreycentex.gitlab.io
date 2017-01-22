@@ -1,18 +1,12 @@
----
-
-type: post
-
-date:  "2012-02-20"
-aliases: ["/2012/02/20/aspergers/"]
-title: Asperger Diagnosis
-categories: ["aspergers"]
-comments: true
-tags:
-   - Aspergers
-   - Psychology
-   - School
-   - Health
----
++++
+type     = "post"
+date     = "2012-02-20"
+aliases  = ["/2012/02/20/aspergers/"]
+title    = "Asperger Diagnosis"
+categories = ["aspergers"]
+comments = "true"
+tags     = ["Aspergers","Psychology"]
++++
 OK, It has been a while since I have posted.  Many things have taken place since the start of this year, including:
 
 + The start of a new semester at school.  I am taking Data Structures (C+ + ), Discrete Mathematics 2, and Assembly Language (MIPS-32).  I may be on par to finish my certificate by the end of this year, then off to get a MS degree starting next year (while working full-time at that point).

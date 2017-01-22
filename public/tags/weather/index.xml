@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weather on Jeffreys Ruminations</title>
+    <link>https://jeffreycentex.gitlab.io/tags/weather/index.xml</link>
+    <description>Recent content in Weather on Jeffreys Ruminations</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jeffreycentex.gitlab.io/tags/weather/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tropical Storm Hermine Redux</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/tropical-storm-hermine-redux/</link>
+      <pubDate>Wed, 08 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/tropical-storm-hermine-redux/</guid>
+      <description>&lt;p&gt;My official total as of 8 AM Wednesday morning is 6.89 inches of total rainfall.  We are expecting more this afternoon.&lt;/p&gt;
+
+&lt;p&gt;This is an excerpt of an email I sent to my office staff:&lt;/p&gt;
+
+&lt;p&gt;In the (immediate) aftermath of Tropical Storm Hermine, I thought you might like to know the total precipitation that has fallen as a result of this storm.  This data was obtained by individuals using high accuracy manual rain gauges and are part of the CoCoRaHS network (Community Collaborative Rain, Hail, and Snow Network) – I’m station TX-CML-38.  The graphs below indicate the total precipitation recorded in the prior 24 hour period.  For the purpose of determining the total rainfall, add up the two values from both maps.&lt;/p&gt;
+
+&lt;p&gt;Additional data like this is available at &lt;a href=&#34;http://cocorahs.org/Maps/ViewMap.aspx&#34;&gt;http://cocorahs.org/Maps/ViewMap.aspx&lt;/a&gt; for different counties and different days.&lt;/p&gt;
+
+&lt;p&gt;Total Precipitation for Bexar County as of 7 AM Wednesday, September 8, 2010&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/static.jeffreyrandow.org/images/ts1.png&#34; alt=&#34;September 8 2010&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Total Precipitation for Bexar County as of 7 AM Tuesday, September 7, 2010&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/static.jeffreyrandow.org/images/ts2.png&#34; alt=&#34;September 9 2010&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weather Website</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/weather-website/</link>
+      <pubDate>Mon, 30 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/weather-website/</guid>
+      <description>&lt;p&gt;This is just a quick posting that I have made the weather website live again&amp;hellip; &lt;/p&gt;
+
+&lt;p&gt;This is the site I used to have up a long time ago and is still very beta and needs to have many more improvements made, but for those of you in the local area who need access to the current data on this side of New Braunfels, please have at it:
+&lt;a href=&#34;New Braunfels Weather&#34;&gt;New Braunfels Weather&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,8 +7,7 @@ aliases: ["/2014/09/28/camp-nerd-fitness-post-mortum/"]
 title: "Camp Nerd Fitness Post-Mortum"
 categories: ["fitness"]
 comments: true
-tags: fitness
-      campnerdfitness
+tags: ["Camp Nerd Fitness", "Fitness"]
 ---
 This is the first of two posts that I hope will chronicle my experiences at the most awesome event that I attended between September 18-21, 2014 at a camp nestled in the mountains of northern Georgia.  This inaugural event was held by Steve Kamb and the crew at the website [NerdFitness](http://www.nerdfitness.com) plus some awesome teachers who educated and motivated us to be the best person physically and mentally that we can be.
 

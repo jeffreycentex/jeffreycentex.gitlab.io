@@ -7,8 +7,7 @@ aliases: ["/2014/09/28/the-road-ahead-(cnf-part-2)/"]
 title: "The Road Ahead (CNF Part 2)"
 categories: ["fitness"]
 comments: true
-tags: campnerdfitness
-      fitness
+tags: ["Camp Nerd Fitness", "Fitness"]
 ---
 **Updated on 3/2/2015 to bring things up-to-date**
 
@@ -46,7 +45,7 @@ So what lies on my road ahead?  I have came up with a list of things that I want
 * Do a one-legged bodyweight squat.
 * Do a pull-up.  A real pull-up.
 * Go to PorkChopPlatoon LAN next year.
-* Run a 5K.  Note the term "Run".  Not walk.  I can do better than that. 
+* Run a 5K.  Note the term "Run".  Not walk.  I can do better than that.
 * Do a Tough Mudder or Spartan Race.  I don't care how long it takes me to finish - just the fact that I would do this.  **Doing Warrior Dash in March 2015 - I think this would apply.**
 * Play Softball A good start in a team sport and will force me to work with others on a team. **I tried.  They cancelled my Softball league.  Then they cancelled my Wiffleball league.  I may try a church softball league later in the spring**
 * Do Toastmasters.  Push the comfort zone.

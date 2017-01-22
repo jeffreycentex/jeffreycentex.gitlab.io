@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Jeffreys Ruminations</title>
+    <link>https://jeffreycentex.gitlab.io/tags/website/index.xml</link>
+    <description>Recent content in Website on Jeffreys Ruminations</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jeffreycentex.gitlab.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tag Support</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/Tag-Support/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/Tag-Support/</guid>
+      <description>
+
+&lt;p&gt;The theme now supports tags, tag pages, and a tag cloud.  This functionality requires you to run a utility before pushing your updates to Github Pages.  In order to use tags, you need to add the following information into your YAML front matter:&lt;/p&gt;
+
+&lt;p&gt;{% highlight yaml linenos %}
+tags:
+    - Tag Name (can be multiple words)
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;The tag pages will be stored in the /tags directory and the tagcloud.html file (include wherever you want to use it) is saved in the _includes directory.&lt;/p&gt;
+
+&lt;p&gt;To create the tag pages and tag cloud, you will need to use the new Rakefile support (see below).  Running &lt;code&gt;rake deploy&lt;/code&gt; will automatically create the tag pages before committing the changes and pushing to github.&lt;/p&gt;
+
+&lt;p&gt;Also, tags support the banner functionality as described.  If either the &lt;code&gt;banner&lt;/code&gt; id or the &lt;code&gt;bannertitle&lt;/code&gt; name match the tag name, then that banner will be incorporated on that tag page.&lt;/p&gt;
+
+&lt;h4 id=&#34;rakefile-support&#34;&gt;Rakefile support:&lt;/h4&gt;
+
+&lt;p&gt;This website supports the following rake commands:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;rake post[&amp;quot;title&amp;quot;]&lt;/code&gt; - Creates a post with the title &amp;ldquo;title&amp;rdquo; and saved into the _posts directory with the current date.  It will then open up your text editor (specified in config.yml).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake draft[&amp;quot;title&amp;quot;]&lt;/code&gt; - Similar to post, but this will make it a draft without the post date and will not publish it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake publish&lt;/code&gt; - Promote a draft posting to a real posting.  It will move the file from the _drafts directory to the _posts directory and will change the post date to the current date.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake page[&amp;quot;title&amp;quot;]&lt;/code&gt; - Like posts, but this time with a page.  It is moved to the pages folder by default.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake build&lt;/code&gt; - This will build the tag pages and will also build the full site, but &lt;strong&gt;not&lt;/strong&gt; serve it.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake watch&lt;/code&gt; - Builds the site and tags, then serve it.  It will also regenerate on post/page/draft changes.  You can also run &lt;code&gt;rake watch[&amp;quot;drafts&amp;quot;]&lt;/code&gt; which will also preview the draft postings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake preview&lt;/code&gt; - This will build the site/tags, then open up a web browser to preview the website.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake deploy[&amp;quot;Message&amp;quot;]&lt;/code&gt; - This will build the tag pages, add new files to the local git repository, commit the changes with the message &amp;ldquo;Message&amp;rdquo;, then push the local git repository to your origin master (likely to be github)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rake tags&lt;/code&gt; - This will just build the tag pages and tag cloud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In order to do the post/page publishing, there are two prototype files in the root directory that are named &lt;code&gt;_post.txt&lt;/code&gt; and &lt;code&gt;_page.txt&lt;/code&gt; (these names can be updated by changing some variables in the _config.yml file).&lt;/p&gt;
+
+&lt;h5 id=&#34;5-27-14&#34;&gt;5/27/14&lt;/h5&gt;
+
+&lt;p&gt;Added an &lt;a href=&#34;https://jeffreycentex.gitlab.io/archives/&#34;&gt;Archives&lt;/a&gt; Page.  It still kinda sucks, but I&amp;rsquo;ll work on it..  Look under the category menu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sticky:  Site Status Report</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/Status-Report/</link>
+      <pubDate>Mon, 12 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/Status-Report/</guid>
+      <description>
+
+&lt;p&gt;This will be a &lt;em&gt;sticky&lt;/em&gt; post that I will update as I change things on the site.&lt;/p&gt;
+
+&lt;p&gt;As of May 12, 2014, I have finished the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Imported all of the old postings from Wordpress and migrated them to the new system.&lt;/li&gt;
+&lt;li&gt;Implemented Blog Roll.&lt;/li&gt;
+&lt;li&gt;Got MediaElements.JS to finally cooperate.&lt;/li&gt;
+&lt;li&gt;Photo Galleries online.&lt;/li&gt;
+&lt;li&gt;Set up GDrive CDN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Work to be done:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finish Templating (Author)&lt;/li&gt;
+&lt;li&gt;Twitter Card&lt;/li&gt;
+&lt;li&gt;Open Graph&lt;/li&gt;
+&lt;li&gt;Collections&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This has been a fun project.  It has taught me a lot about HTML 5 and made me appreciate Ruby to at least a small extent.&lt;/p&gt;
+
+&lt;h3 id=&#34;may-18-2014-update&#34;&gt;May 18, 2014 Update&lt;/h3&gt;
+
+&lt;p&gt;I did a little cleanup on the site and have started to implement banners on certain post types (See any of the music postings).  I still need to tweak it some, though.  I haven&amp;rsquo;t spent any time on the site the last week except for this morning.&lt;/p&gt;
+
+&lt;h3 id=&#34;june-15-2014-update&#34;&gt;June 15, 2014 Update&lt;/h3&gt;
+
+&lt;p&gt;This is a catchup post.  The site now supports Tags and Archive pages &lt;a href=&#34;http://jeffreyrandow.org/2014/05/30/Tag-Support/&#34;&gt;(See this Post)&lt;/a&gt;.  This means that I  can&amp;rsquo;t completely run this on Github Pages, but it is very easy to implement and still use Github Pages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Site Launch</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/Jekyll-Site-Relaunch/</link>
+      <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/Jekyll-Site-Relaunch/</guid>
+      <description>&lt;p&gt;I am currently in the process of relaunching my personal blog from Wordpress to a
+static publishing engine named &amp;ldquo;Jekyll&amp;rdquo;.  This entails a major design shift and I
+am rearchitecting my data to be cloud hosted (using Google Drive as a CDN - Content
+Delivery Network - for my concert MP3&amp;rsquo;s and other larger/hosted files) with the
+base site running on Github Pages (though I could also host it on Amazon S3,
+Rackspace Cloud, or even CloudFlare).&lt;/p&gt;
+
+&lt;p&gt;Why am I doing this?  Wordpress rocks as a website engine and I&amp;rsquo;m currently using it
+to do a web page re-write for my office.  But for my personal needs, it is way too
+bloated and overkill for what I need.  Plus I can now pretty much leave the site
+and not worry about security (since it is all static html).&lt;/p&gt;
+
+&lt;p&gt;Why Jekyll?  At first, I was planning on using Pelican, but it is extremely inflexible
+about using your custom URLs.  Yes, I know you can force it, but it was not very elegant.
+Besides, I also just wanted to host the file and not have to worry about building it
+myself.  Why not Ghost?  See my reasonings for Wordpress above, and I dislike using
+Javascript as a language (Ghost uses Node.JS) and would like to see it&amp;rsquo;s early demise.
+(Yeah, I know, I&amp;rsquo;m using plenty of Javascript on this site, but that doesn&amp;rsquo;t mean that
+I have to like it).&lt;/p&gt;
+
+&lt;p&gt;What should you get?  Faster loading.  A more cohesive appearance.&lt;/p&gt;
+
+&lt;p&gt;What do I get?  A chance to code.  I primarily use Python and shell/Powershell scripting
+now-a-days and need to keep up my code chops.  Plus, at this rate, I&amp;rsquo;ll have Ruby
+down pat soon.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to make a shout out to &lt;a href=&#34;http://www.jordanthornquest.com&#34;&gt;Jordan Thornquest&lt;/a&gt; who provided
+me with the base theme that I have forked and added on to.  I still have lots to do to
+bring the site completely back onine (I&amp;rsquo;m going to add banner pictures, make more
+category pages, and stuff like that), but I have to correct all of the old content
+migrated over from Wordpress.  I have half a mind to convert most of it over to
+Markdown from HTML, but that will be on a time available basis.&lt;/p&gt;
+
+&lt;p&gt;Anywho, that is enough for now.  More work tomorrow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Site Update and News</title>
+      <link>https://jeffreycentex.gitlab.io/blogs/site-update-and-news/</link>
+      <pubDate>Sat, 14 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/blogs/site-update-and-news/</guid>
+      <description>&lt;p&gt;OK, I have a quick update&amp;hellip;  I&amp;rsquo;ve moved the server once again - this time to my home.  I have finally been able to upgrade from my original 384K DSL to a more modern 3 MB/512KB with a static IP address, so I should be able to host from home again.  Things might be a bit slower, but I haven&amp;rsquo;t noticed many issues during the &amp;ldquo;beta&amp;rdquo; phase of the transition.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also updated the software and softened the look.  Let me know what you think.&lt;/p&gt;
+
+&lt;p&gt;More later this weekend.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

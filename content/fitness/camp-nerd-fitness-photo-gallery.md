@@ -7,8 +7,7 @@ aliases: ["/2014/09/21/camp-nerd-fitness-photo-gallery/"]
 title: "Camp Nerd Fitness Photo Gallery"
 category: fitness
 comments: true
-tags: fitness
-      campnerdfitness
+tags: ["Camp Nerd Fitness", "Fitness"]
 ---
 This is a quick blog post for my pictures from Camp Nerd Fitness event in Clayton, GA.  I expect to have a full posting of my thoughts and experiences this weekend (Sept 27-28).
 

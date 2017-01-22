@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oakwood Orchestra on Jeffreys Ruminations</title>
+    <link>https://jeffreycentex.gitlab.io/tags/oakwood-orchestra/index.xml</link>
+    <description>Recent content in Oakwood Orchestra on Jeffreys Ruminations</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jeffreycentex.gitlab.io/tags/oakwood-orchestra/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Oakwood Christmas 2013</title>
+      <link>https://jeffreycentex.gitlab.io/media/oakwood-christmas-2013/</link>
+      <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeffreycentex.gitlab.io/media/oakwood-christmas-2013/</guid>
+      <description>I played in the orchestra on this one (Tuba)..  The recording is from the 10:45 AM service.  I&#39;m sorry about some of the ambient noises (talking, coughing, etc), but this recording is taken from the room and not the internet stream which may be missing a few instruments.  For those with kids, the Kid&#39;s choir sang the last three songs.
+&lt;br/&gt;&lt;br/&gt;
+The full recording archive is available &lt;a href=&#34;https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/2013ChristmasConcert.zip&#34;&gt;here&lt;/a&gt;.  This is provided as is and is made available via Fair Use.
+&lt;br/&gt;&lt;br/&gt;
+&lt;strong&gt;Please note that Jeff Owen has posted the official video of the concert on the church website (and linked below).  This one picks up the choir a lot better, but pretty much leaves out the orchestra (there is a technical reason for this, but that is why I put the recorder out to pick up everything) &lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&#34;http://mediaconsole.streamnow.com/player?apiKey=797f76b6741548c7bd8540153737d4b5e96143aa&amp;videoGuid=c20653d9-ade3-4e9b-8aec-d4dd04ac3616&amp;showPlaylist=false&amp;playlistItems=4&amp;autoPlay=true&amp;autoHide=null&amp;stretch=false&amp;showAds=false&amp;showCompanions=false&amp;showShare=true&amp;showFilter=null&amp;playerWidth=854&amp;playerHeight=480&#34;&gt;Church Video Link&lt;/a&gt;
+&lt;!-- more --&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;table class=&#34;table table-bordered&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+      url: &#34;13rejoice.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Rejoice&#34;&lt;tr&gt;
+      url: &#34;13soundround.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Sound of the Round  &#34;&lt;tr&gt;
+      url: &#34;13noel.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Noel  &#34;&lt;tr&gt;
+      url: &#34;13somethingsup.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Somethings Up &#34;&lt;tr&gt;
+      url: &#34;13lovecame.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Love Came for Me  &#34;&lt;tr&gt;
+      url: &#34;13master.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Master and Angels (Stand and Greet) &#34;&lt;tr&gt;
+      url: &#34;13simeon.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Simeon&#39;s Song &#34;&lt;tr&gt;
+      url: &#34;13glory.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Glory All Around  &#34;&lt;tr&gt;
+      url: &#34;13bellsloud.mp3&#34; type=&#34;audio/mpeg&#34;&gt;Your browser doesn&#39;t support the audio element&lt;/audio&gt;&lt;/html&gt;&#34;
+    - title: &#34;Let the Bells of Praise Ring Loud&#34;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

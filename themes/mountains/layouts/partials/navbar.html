@@ -23,7 +23,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tags"></i>  Categories <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                {{- range $name, $taxonomy := .Site.Taxonomies.categories -}}<li><a href="/categories/{{ $name | urlize }}/">{{ $name | humanize }}</a></li>
+                {{- range $name, $taxonomy := .Site.Taxonomies.categories -}}<li><a href="/categories/{{ $name | urlize }}/">{{ $name| humanize | title }}</a></li>
                 {{ end }}
               </ul>
             </li>
