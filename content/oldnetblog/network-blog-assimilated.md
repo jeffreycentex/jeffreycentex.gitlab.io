@@ -1,7 +1,4 @@
 ---
-
-type: post
-
 date:  "2014-06-16"
 aliases: ["/2014/06/16/network-blog-assimilated/"]
 title: "Network Blog Assimilated"

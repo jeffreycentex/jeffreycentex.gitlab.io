@@ -6,7 +6,7 @@ categories:   ["media"]
 tags:         ["Comal Community Band"]
 music:        "Comal Community Band"
 coverart:     "/images/ccb.jpg"
-type:         "music"
+
 playlist:
   - songs:
     - title: "Abba on Broadway"

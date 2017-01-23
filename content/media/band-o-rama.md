@@ -6,7 +6,7 @@ categories:   ["media"]
 tags:         ["Longhorn Band"]
 music:        "Longhorn Band"
 coverart:     ""
-type:         "music"
+
 playlist:
   - songs:
     - title: "Texas Concert Band - The Wind and the Lion"
