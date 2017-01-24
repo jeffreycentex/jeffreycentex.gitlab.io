@@ -2,7 +2,7 @@
 Title:      About My Faith
 Author:     jeffreycentex
 layout:     page
-permalink:  /christianity/aboutmychristianity/
+url:  /christianity/aboutmychristianity/
 ---
 ## About My Christianity
 

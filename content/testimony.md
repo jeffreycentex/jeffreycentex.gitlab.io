@@ -2,7 +2,7 @@
 Title:      Jeffrey's Testimony
 Author:     jeffreycentex
 layout:     page
-permalink:  /christianity/testimony/
+url:  /christianity/testimony/
 banner:     testimony
 ---
 ## My Testimony

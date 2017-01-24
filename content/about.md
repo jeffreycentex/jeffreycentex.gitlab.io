@@ -12,7 +12,7 @@ In 2012, I was diagnosed as having High Functioning Autism (formerly known as As
 
 I am also an unabashed Christian (see my [testimony](/about/testimony/) for more information).  I volunteer at my local church as a member of the Creative Arts Team in the sound and tech ministries (I'm the sound mixer for morning overflow and Sunday Night services) and sometimes play in the Praise Band for special occasions.
 
-I currenty am employed in an IT and Information Security role at a San Antonio nephrology practice while also attending graduate school on a part-time basis.
+I currently am employed in an IT, development, and InfoSec role at a San Antonio nephrology practice while also attending graduate school and being a graduate teaching assistant on a part-time basis.
 
 ### Activities:
 
