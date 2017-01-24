@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-09-28"
 aliases: ["/2014/09/28/the-road-ahead-(cnf-part-2)/"]

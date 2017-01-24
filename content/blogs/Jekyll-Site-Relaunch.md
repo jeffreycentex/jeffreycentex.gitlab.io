@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-05-11"
 aliases: ["/2014/05/11/Jekyll-Site-Relaunch/"]

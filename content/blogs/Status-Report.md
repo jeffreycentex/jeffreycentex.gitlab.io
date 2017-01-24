@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2014-05-12"
 aliases: ["/2014/05/12/Status-Report/"]

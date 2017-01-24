@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2008-05-21"
 aliases: ["/2008/05/21/family-photo-album/"]

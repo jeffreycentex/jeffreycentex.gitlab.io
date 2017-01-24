@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 date:  "2009-02-14"
 aliases: ["/2009/02/14/site-update-and-news/"]
 title: Site Update and News

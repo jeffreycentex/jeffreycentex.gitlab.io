@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-05-25"
 aliases: ["/2014/05/25/Accountabilibuddy-Needed/"]

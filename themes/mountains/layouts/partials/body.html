@@ -2,11 +2,17 @@
     {{ partial "navbar.html" . }}
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="/images/cloudysky.jpg" alt="...">
+        {{ if .Params.pgbanners }}{{ range .Params.pgbanners }}<div class="item active">
+        <img src="{{.}}" alt="Site Banner Image">
+        <div class="carousel-caption">
+          <h1>{{.Params.pgbanner_title}}</h1>
+          <h3>{{.Params.pgbanner_slogan}}</h3>
+        </div>{{ end }}{{else}}{{ $title := .Site.Params.site_name }} {{$slogan := .Site.Params.slogan }}
+        {{ range .Site.Params.banners }}<div class="item active">
+          <img src="{{.}}" alt="Site Banner Image">
           <div class="carousel-caption">
-            <h1>Jeffreys Ruminations</h1>
-            <h5>A tale of adventures...</h5>
-          </div>
+            <h1>{{$title}}</h1>
+            <h3>{{$slogan}}</h3>
+          </div>{{ end }}{{end}}
       </div>
       <br/>

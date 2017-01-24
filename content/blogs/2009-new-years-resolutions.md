@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2008-12-31"
 aliases: ["/2008/12/31/2009-new-years-resolutions/"]

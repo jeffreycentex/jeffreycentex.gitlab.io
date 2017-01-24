@@ -1,5 +1,5 @@
 ---
-layout:     post
+
 date:  "2008-05-23"
 aliases: ["/2008/05/23/added-additional-photos/"]
 title:      Added Additional Photos

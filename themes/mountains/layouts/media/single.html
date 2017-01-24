@@ -1,6 +1,6 @@
 {{- define "javascript" -}}<script src="https://cdn.bootcss.com/aplayer/1.5.8/APlayer.min.js"></script>
 <script> var player = new APlayer({ element: document.getElementById('player'), narrow: false, autoplay: false,
-    showlrc: false, mutex: true, theme: '#ad7a86', mode: 'random',
+    showlrc: false, mutex: true, theme: '#000000', mode: 'random',
     music: [ {{ $cdn := .Site.Params.musiccdn }}{{ $group := .Params.music}}{{$coverart := .Params.coverart}}
     {{ range .Params.playlist}}{{range .songs }}
         { title: '{{.title}}', author: '{{ $group }}', url: '{{  $cdn }}{{ .url }}', pic: '{{ $coverart}}'  },
@@ -17,7 +17,7 @@
            {{ .Content }}
         </article>
         <hr/>
-        <div id="player" class="aplayer"></div>
+        <div id="player" class="aplayer panel panel-primary"></div>
   </div>
 </section>
 </div>

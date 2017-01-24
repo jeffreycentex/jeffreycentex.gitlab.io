@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2010-09-08"
 aliases: ["/2010/09/08/tropical-storm-hermine-redux/"]

@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2016-08-19"
 aliases: ["/2016/08/19/temp-update/"]

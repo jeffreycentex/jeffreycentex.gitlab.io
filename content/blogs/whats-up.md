@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2008-10-24"
 aliases: ["/2008/10/24/whats-up/"]

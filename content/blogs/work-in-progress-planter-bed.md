@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2009-02-15"
 aliases: ["/2009/02/15/work-in-progress-planter-bed/"]

@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2008-09-07"
 aliases: ["/2008/09/07/september-thoughts/"]

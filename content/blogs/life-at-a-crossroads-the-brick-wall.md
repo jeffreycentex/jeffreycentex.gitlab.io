@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2011-04-24"
 aliases: ["/2011/04/24/life-at-a-crossroads-the-brick-wall/"]

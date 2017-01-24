@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+
 
 date:  "2008-06-30"
 aliases: ["/2008/06/30/weather-website/"]

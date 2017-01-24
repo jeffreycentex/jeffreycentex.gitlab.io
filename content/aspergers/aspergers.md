@@ -1,5 +1,5 @@
 +++
-type     = "post"
+
 date     = "2012-02-20"
 aliases  = ["/2012/02/20/aspergers/"]
 title    = "Asperger Diagnosis"

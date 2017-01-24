@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-10-24"
 aliases: ["/2014/10/24/longhorn-alumni-band-2014/"]

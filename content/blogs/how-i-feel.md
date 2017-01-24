@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2008-06-20"
 aliases: ["/2008/06/20/how-i-feel/"]

@@ -17,11 +17,13 @@ paginate = 10
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
   musiccdn = "https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/"
+  banners = ["/images/cloudysky.jpg"]
+  slogan = "An intrepid adventurer in the Game of Life."
 
 [params.author]
   name = "Jeffrey Randow"
-  description = "OK, this is a test description..."
-  image = "/images/me.jpg"
+  description = "Hey.  I'm a IT/Developer/Infosec dude who works in San Antonio and lives in New Braunfels, TX.  I'm also a graduate student pursuing a MS CS from the Georgia Institute of Technology located in Atlanta, GA.  Musician at Heart.  Storm Chaser.  Gardener.  And Amateur Meteorologist."
+  image = "/images/jeffrey.jpg"
 
 [permalinks]
   post = "/:section/:title"
@@ -127,3 +129,27 @@ paginate = 10
     url = "/picasa/"
     weight = 3
     pre = "<i class='fa fa-camera'></i>"
+[[menu.main]]
+    name = "Bands"
+    pre = "<i class='fa fa-music'></i>"
+    weight = 4
+[[menu.main]]
+    name = "Hill Country Community Band"
+    url = "/tags/hill-country-community-band/"
+    weight = 0
+    parent = "Bands"
+[[menu.main]]
+    name = "Comal Community Band"
+    url = "/tags/comal-community-band/"
+    weight = 1
+    parent = "Bands"
+[[menu.main]]
+    name = "Oakwood Orchestra"
+    url = "/tags/oakwood-orchestra/"
+    weight = 2
+    parent = "Bands"
+[[menu.main]]
+    name = "Longhorn/Longhorn Alumni Band"
+    url = "/tags/longhorn-band/"
+    weight = 3
+    parent = "Bands"

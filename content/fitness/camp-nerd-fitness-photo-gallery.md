@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-09-21"
 aliases: ["/2014/09/21/camp-nerd-fitness-photo-gallery/"]

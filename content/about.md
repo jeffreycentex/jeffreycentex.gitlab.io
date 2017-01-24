@@ -1,11 +1,8 @@
----
-title: 		Who is Jeffrey Randow
-date: 		"2014-05-05"
-author: 	   jeffreycentex
-url:	/about/
-published:	true
-layout:     page
----
++++
+title = "Who is Jeffrey Randow"
+url = 	"/about/"
+description = "Information about Jeffrey Randow"
++++
 
 ## Who is Jeffrey Randow?
 
@@ -23,7 +20,7 @@ I currenty am employed in an IT and Information Security role at a San Antonio n
 -   Hill Country Community Band (former member)
 -   Oakwood Baptist Church Orchestra and Creative Arts Team
 -   Meteorology (See my Weather Station at [http://www.nbtx-wx.com](http://www.nbtx-wx.com))
--   Nature/Landscape Photography (see my photo gallery here or on Picasa)
+-   Nature/Landscape Photography (see my photo gallery here or on Google Photos)
 -   Amateur Radio (N5SNT) (I'm interested in digital modes on HF, SDR Radio, and VHS/UHF)
 
 ### Favorites?
@@ -33,12 +30,10 @@ I currenty am employed in an IT and Information Security role at a San Antonio n
 -   Drink - Unsweet Iced Tea (I'm diabetic, so I had to stop Sweet Tea)
 -   Alcoholic Beverage - Pina Colada (though I don't normally drink at all)
 -   Music - Alternative to Country to Worship/Praise to Grunge (I don't like Rap or Hip-hop). My favorite artists are Carrie Underwood, Chris Tomlin, Nirvana, Willie Nelson, Cross Canadian Ragweed,etc.
--	Books - Fantasy books (Harry Potter, Rick Riordan), Joel Rosenberg, Vince Flynn, Tom Clancy, John Grisham, any tech books that I can find.
+-	  Books - Fantasy books (Harry Potter, Rick Riordan), Joel Rosenberg, Vince Flynn, Tom Clancy, John Grisham, any tech books that I can find.
 -   Sport to Watch - Football, Hockey, Baseball, Winter Olympics.  **NO PRO SPORTS**
 -   Sport to do - Bowling and Walking/Hiking/Camping (just not here in Texas during the summer months or cedar season)
 
 If you have questions about New Braunfels, the weather, amateur radio, or Christianity - please feel free to email me via the link on the contact me page. Better yet, instant message me when I am on.
 
 Thanks for visiting.
-
-<small>(last revision - May 5, 2014)</small>

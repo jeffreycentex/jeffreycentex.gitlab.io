@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2014-12-07"
 aliases: ["/2014/12/07/comal-community-band-2014-stage-theatre/"]

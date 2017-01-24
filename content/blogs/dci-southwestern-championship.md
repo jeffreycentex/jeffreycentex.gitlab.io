@@ -1,6 +1,6 @@
 ---
 
-type: post
+
 
 date:  "2008-07-20"
 aliases: ["/2008/07/20/dci-southwestern-championship/"]
