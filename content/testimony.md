@@ -1,10 +1,11 @@
----
-Title:      Jeffrey's Testimony
-Author:     jeffreycentex
-layout:     page
-url:  /christianity/testimony/
-banner:     testimony
----
++++
+title = "Jeffrey's Testimony"
+type = "page"
+url = "/christianity/testimony/"
+description = "Jeffrey Randow Christian and Conversion"
+keywords = ["Jeffrey Randow Testimony", "Jeffrey Randow Christian"]
+lastupdate = "01/29/2017 Modernizing"
++++
 ## My Testimony
 
 Hey, thanks for visiting my testimony site. I am a relatively new christian (in a real sense), so I am still learning and currently thirst for the knowledge of the Lord and the bible. 

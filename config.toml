@@ -96,7 +96,7 @@ paginate = 10
     parent = "Who Am I?"
 [[menu.main]]
     name = "My Beliefs"
-    url = "/christianity/aboutmychristianity/"
+    url = "/christianity/faith/"
     weight = 6
     parent = "Who Am I?"
 [[menu.main]]
@@ -106,7 +106,7 @@ paginate = 10
     parent = "Who Am I?"
 [[menu.main]]
     name = "About Accountability Groups"
-    url = "/christianity/accountability-public/"
+    url = "/christianity/accountability/"
     weight = 8
     parent = "Who Am I?"
 [[menu.main]]

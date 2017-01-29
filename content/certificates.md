@@ -1,5 +1,9 @@
 +++
-title =     "Certificates and Public Keys"
+title = "Jeffrey's Certificates and PGP Keys"
+type = "page"
+description = "Jeffrey's Certificates and PGP Keys"
+keywords = ["Jeffrey Randow PGP", "Jeffrey Randow Certs"]
+lastupdate = "01/29/2017 Modernizing"
 url =     	"/about/certificates/"
 +++
 ## Certificates and PGP Keys

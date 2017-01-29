@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="{{.Site.Params.author.name}}">
+    <meta property="article:author" content="https://www.facebook.com/{{ .Site.Params.social.facebook }}" />
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
+    <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
     {{- if .Site.Params.google_site_verification -}}<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}">{{end}}
     {{- if .Site.Params.bing_site_verification -}}<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}">{{end}}
 
-    {{- if .Site.Params.geo_position -}}<meta name="geo.position" content="{{.Site.Params.geo_position}}">
+    {{ if .Site.Params.geo_position -}}<meta name="geo.position" content="{{.Site.Params.geo_position}}">
     <meta name="geo.placename" content = "{{.Site.Params.geo_placename}}">
     <meta name="geo.region" content="{{.Site.Params.geo_region}}">{{ end }}
 
@@ -21,13 +22,21 @@
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
     <meta property="og:site_name" content="{{ .Site.Params.site_name}}">
+    {{ with .Params.images }}{{ range first 6 . }}<meta property="og:image" content="{{ . }}" />{{ end }}{{ end }}
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@{{.Site.Params.social.twitter}}" />
+    <meta name="twitter:site" content="@{{.Site.Params.social.twitter}}" />{{ $image := .Site.Params.author.image }}
     <meta name="twitter:creator" content="@{{.Site.Params.social.twitter}}" />
     <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta name="twitter:image" content="" />
+    {{ with .Params.images }}<meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="{{ index . 0 }}"/>
+    {{ else }}<meta name="twitter:card" content="summary"/>
+    <meta name="twitter:image:src" content="{{$image}}"/>{{ end }}
+    <!-- Schema.org markup -->
+    <meta itemprop="name" content="{{ .Title }}">
+    <meta itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}">
+    {{ with .Params.images }}{{ range first 6 . }}<meta itemprop="image" content="{{ . }}">{{ end }}{{ end }}
+    <meta itemprop="wordCount" content="{{ .WordCount }}">
 
     <link rel="icon" href="/images/favicon.ico">
 

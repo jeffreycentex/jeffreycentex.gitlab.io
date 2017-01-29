@@ -1,7 +1,7 @@
 ---
 title:   What is an Accountability Group?
 layout:  page
-url:    /christianity/accountability-public/
+url:    /christianity/accountability/
 ---
 ## Accountability Partners/Groups
 

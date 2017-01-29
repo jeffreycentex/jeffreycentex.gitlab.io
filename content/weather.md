@@ -1,10 +1,11 @@
----
-title: Weather Station Information
-layout:     page
-permalink:  /weather/
----
-## Welcome to Jeffrey's Weather Station Information Page!
-
++++
+title = "Weather Station Information"
+type = "page"
+url = "/weather/"
+description = "Jeffrey Randow's Weather Station"
+keywords = ["New Braunfels Weather","New Braunfels Skywarn","CWOP","KTXNEWBR1","Fischer Park Weather","78130 Weather"]
+lastupdate = "01/29/2017 Modernizing"
++++
 My weather station consists of a Vantage Pro2 Wireless Weather Station mounted in an open field adjacent to my house located on County Line Road at the eastern "high" point of the City of New Braunfels. This station replaces a Oregon Scientific WMR-100 I used temporarily after my original Vantage Pro Wireless died earlier this year. My original station was a Davis Instruments One-Wire-Weather station that is still mounted at the site, albeit covered with ivy and other vines at this time.
 
 My weather is posted online to Weather Underground (the page most of you were visiting before coming here), the APRS (amateur radio network) system, to my upcoming New Braunfels Weather site (not online yet), and to the CWOP program (a part of the APRS system, but for ordinary citizens instead of amateur radio operators).

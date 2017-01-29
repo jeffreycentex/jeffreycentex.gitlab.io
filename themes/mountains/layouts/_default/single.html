@@ -2,7 +2,9 @@
 {{ partial "body.html" . }}
 <div class = "container" role="main">
 <section id="main">
-  <h1 id="title">{{ .Title }}</h1>
+  <h1 id="title">{{ .Title }}</h1>  {{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
+  {{ if eq .Type "page"}}<h6>Last Updated:  {{.Params.lastupdate}}</h6>{{else}}<h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
+  <h5>Tags:  {{ range .Params.tags }}<span class="badge"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>{{end}}
   <div>
         <article id="content">
            {{ .Content }}
