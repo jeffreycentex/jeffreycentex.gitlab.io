@@ -2,7 +2,7 @@
 title = "Who is Jeffrey Randow"
 url = 	"/about/"
 description = "Information about Jeffrey Randow"
-keywords = "Jeffrey Randow", "Comal Community Band", "Hill Country Community Band"
+keywords = ["Jeffrey Randow", "Comal Community Band", "Hill Country Community Band"]
 type = "page"
 lastupdate = "01/29/2017 Rewrite of Page"
 +++
