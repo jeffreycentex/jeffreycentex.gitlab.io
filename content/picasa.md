@@ -1,5 +1,5 @@
 +++
-title = "Jeffrey's Testimony"
+title = "Jeffrey's Photo Galleries"
 type = "page"
 description = "Jeffrey's Photo Galleries"
 lastupdate = "01/29/2017 Modernizing"
