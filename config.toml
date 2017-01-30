@@ -17,7 +17,7 @@ paginate = 10
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
   musiccdn = "https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/"
-  banners = ["/images/cloudysky.jpg"]
+  banner = "/images/galaxy_banner.jpg"
   slogan = "An intrepid adventurer in the Game of Life."
 
 [params.author]
@@ -60,11 +60,6 @@ paginate = 10
 # Menus
 # Menus are special in this theme.  You can define dropdown menus by using a parent.  You can also place a separator
 # and a submenu header by using the identifier = "sep" and identifier = "head" for those menu items
-[[menu.main]]
-  name = "Home"
-  pre = "<i class='fa fa-home'></i>"
-  weight = 0
-  url = "/"
 [[menu.main]]
   name = "Who Am I?"
   pre = "<i class='fa fa-male'></i>"
@@ -153,3 +148,11 @@ paginate = 10
     url = "/tags/longhorn-band/"
     weight = 3
     parent = "Bands"
+[[menu.main]]
+    name = "Projects"
+    weight = 5
+    pre = "<i class='fa fa-server'></i>"
+[[menu.main]]
+    name = "Notes"
+    weight = 6
+    pre = "<i class='fa fa-pencil-square-o'></i>"

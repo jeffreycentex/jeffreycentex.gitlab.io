@@ -1,18 +1,21 @@
   <body>
     {{ partial "navbar.html" . }}
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide hidden-xs hidden-sm" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        {{ if .Params.pgbanners }}{{ range .Params.pgbanners }}<div class="item active">
-        <img src="{{.}}" alt="Site Banner Image">
-        <div class="carousel-caption">
-          <h1>{{.Params.pgbanner_title}}</h1>
-          <h3>{{.Params.pgbanner_slogan}}</h3>
-        </div>{{ end }}{{else}}{{ $title := .Site.Params.site_name }} {{$slogan := .Site.Params.slogan }}
-        {{ range .Site.Params.banners }}<div class="item active">
-          <img src="{{.}}" alt="Site Banner Image">
+        {{ if .Params.pgbanner }}<div class="item">
+          <img src="{{.Params.pgbanner}}" alt="Site Banner Image">
           <div class="carousel-caption">
-            <h1>{{$title}}</h1>
-            <h3>{{$slogan}}</h3>
-          </div>{{ end }}{{end}}
+            <h1>{{.Params.pgbanner_title}}</h1>
+            <h3>{{.Params.pgbanner_slogan}}</h3>
+          </div>
+        </div>
+        {{else}}<div class="item active">
+          <img src="{{.Site.Params.banner}}" alt="Site Banner Image">
+          <div class="carousel-caption">
+            <h1>{{.Site.Params.site_name}}</h1>
+            <h3>{{.Site.Params.slogan}}</h3>
+          </div>
+        </div>{{ end }}
       </div>
-      <br/>
+    </div>
+    <br/>
