@@ -9,9 +9,6 @@ paginate = 10
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 googleAnalytics = "UA-50848309-1"
-disqusShortname = "jeffreycentex"
-google_site_verification = "FMqY8YcPFBLiVV4iRmKNvq2LxlzY7-FdWVWVwWu6dOo"
-bing_site_verification = "B160D0FBA35FCBF482CC9B7A920FF672"
 
 [params]
   site_name = "Jeffreys Ruminations"
@@ -20,7 +17,8 @@ bing_site_verification = "B160D0FBA35FCBF482CC9B7A920FF672"
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
   cdn = "https://s3.amazonaws.com/static.jeffreyrandow.org"
-
+  google_site_verification = "FMqY8YcPFBLiVV4iRmKNvq2LxlzY7-FdWVWVwWu6dOo"
+  bing_site_verification = "B160D0FBA35FCBF482CC9B7A920FF672"
   musiccdn = "https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/"
   banner = "/images/galaxy_banner.jpg"
   slogan = "An intrepid adventurer in the Game of Life."

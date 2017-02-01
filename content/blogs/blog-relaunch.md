@@ -14,3 +14,5 @@ I do plan on posting on both personal as well as technical content.  One focus t
 
 
 Thank you all for your support over the years.
+
+Update 1:  Removed Disqus.  Lots of ad trackers.
