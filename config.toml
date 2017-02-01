@@ -8,17 +8,24 @@ theme = "mountains"
 paginate = 10
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
-#googleAnalytics = "UA-123-45"
-#disqusShortname = "XYW"
+googleAnalytics = "UA-50848309-1"
+disqusShortname = "jeffreycentex"
+google_site_verification = "FMqY8YcPFBLiVV4iRmKNvq2LxlzY7-FdWVWVwWu6dOo"
+bing_site_verification = "B160D0FBA35FCBF482CC9B7A920FF672"
+
 [params]
   site_name = "Jeffreys Ruminations"
   description = "The personal blog of Jeffrey Randow, New Braunfels, TX"
   geo_position = "29.4; -98.1"
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
+  cdn = "https://s3.amazonaws.com/static.jeffreyrandow.org"
+
   musiccdn = "https://s3.amazonaws.com/static.jeffreyrandow.org/mp3audio/"
   banner = "/images/galaxy_banner.jpg"
   slogan = "An intrepid adventurer in the Game of Life."
+  copyright = "This site is copyrighted &copy; 2017 by Jeffrey Randow."
+  license = "This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/''>Creative Commons Attribution 4.0 International License</a>."
 
 [params.author]
   name = "Jeffrey Randow"
@@ -156,3 +163,9 @@ paginate = 10
     name = "Notes"
     weight = 6
     pre = "<i class='fa fa-pencil-square-o'></i>"
+
+[[menu.main]]
+    name = "Network Security Notebook"
+    weight = 1
+    url = "/notes/netsectools/"
+    parent = "Notes"

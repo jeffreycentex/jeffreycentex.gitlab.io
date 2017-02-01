@@ -4,7 +4,9 @@
 <section id="main">
   <h1 id="title">{{ .Title }}</h1>  {{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
   {{ if eq .Type "page"}}<h6>Last Updated:  {{.Params.lastupdate}}</h6>{{else}}<h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
-  <h5>Tags:  {{ range .Params.tags }}<span class="badge"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>{{end}}
+  <h5><a href="{{.Permalink}}"><span class="label label-info">Permalink</span></a>    Word Count:  <span class="badge">{{.WordCount}}</span>         Tags:  {{ range .Params.tags }}<span class="label label-danger"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>{{end}}
+
+  <hr/>
   <div>
         <article id="content">
            {{ .Content }}
@@ -13,4 +15,16 @@
 </section>
 </div>
 {{ partial "gallery.html" . }}
+{{ if eq .Type "page"}}{{else}}<div class = "container" role="pagination">
+  <nav>
+    <ul class="pager">
+      {{if .PrevInSection}}<li class="previous"><a href="{{.PrevInSection.Permalink}}"><span aria-hidden="true">&larr;</span> Previous</a></li>{{else}}<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>{{end}}
+      {{if .NextInSection}}<li class="next"><a href="{{.NextInSection.Permalink}}">Newer <span aria-hidden="true">&rarr;</span></a></li>{{else}}<li class="next disabled"><a href="">Newer <span aria-hidden="true">&rarr;</span></a></li>{{end}}
+    </ul>
+  </nav>
+</div>{{end}}
+{{ if eq .Params.comments "true"}}<hr />
+<div class = "container" role="comments">
+{{ template "_internal/disqus.html" . }}
+</div>{{end}}
 {{ partial "footer.html" . }}

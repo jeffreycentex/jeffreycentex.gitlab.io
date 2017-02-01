@@ -46,8 +46,6 @@ Your neurotypical (non-autistic) score: 25 of 200
 
 You are very likely an Aspie
 
-[Aspie Quiz](http://rdos.net/eng/Aspie-quiz.php)
-
-![My Asperger Chart](https://s3.amazonaws.com/static.jeffreyrandow.org/images/asperger.png)
+{{< cdnfigure folder="images" file="asperger.png" title="My Aspergers Results" caption="My results of the RDOS Aspie Quiz" attrlink="http://rdos.net/eng/Aspie-quiz.php" attr="RDOS Aspie Quiz">}}
 
 I guess that is it for now.  I have two concerts that I need to process and post, but that will be next weekend at the earliest.  Have a great week.

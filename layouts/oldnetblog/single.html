@@ -2,7 +2,8 @@
 {{ partial "body.html" . }}
 <div class = "container" role="main">
 <section id="main">
-  <h1 id="title">{{ .Title }}</h1>
+  <h1 id="title">{{ .Title }}</h1>{{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
+  <h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
   <div class="alert alert-danger" role="alert">
      <h4>Alert - Archived Data</h4>
      <p>Please note that the old Network Blog content (from http://www.networkblog.net) is included for historic purposes only.  Much of this data is either no longer relevant
