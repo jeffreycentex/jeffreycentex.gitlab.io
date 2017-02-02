@@ -31,7 +31,7 @@
     {{ with .Params.images }}<meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image:src" content="{{ index . 0 }}"/>
     {{ else }}<meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image:src" content="{{.baseurl}}{{$image}}"/>{{ end }}
+    <meta name="twitter:image:src" content="{{.Site.Params.baseurl}}{{$image}}"/>{{ end }}
 
     <link rel="icon" href="/images/favicon.ico">
 
