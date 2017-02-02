@@ -25,14 +25,17 @@
   <div class="panel list-group">
     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#taglist" data-parent="#sitelists">Tags</a>
     <div id="taglist" class="sublinks collapse">
-      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}<li class="list-group-item"><a href="/tags/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
-      {{ end }}
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}<li class="list-group-item"><a href="/tags/{{ $name | urlize }}/">{{ $name | humanize | title }}</a></li>
+        {{ end }}
+      </ul>
     </div>
     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#catlist" data-parent="#sitelists">Categories</a>
     <div id="catlist" class="sublinks collapse">
-      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}<li class="list-group-item"><a href="/categories/{{ $name | urlize }}/">{{ $name | humanize |title }}</a></li>
-      {{ end }}
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}<li class="list-group-item"><a href="/categories/{{ $name | urlize }}/">{{ $name | humanize |title }}</a></li>
+        {{ end }}
+      </ul>
     </div>
   </div>
-</div>
 </div>

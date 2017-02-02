@@ -1,21 +1,20 @@
 {{ partial "header.html" . }}
 {{ partial "body.html" . }}
-<div class = "container" role="main">
-<section id="main">
-  <h1 id="title">{{ .Title }}</h1>  {{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
-  {{ if eq .Type "page"}}<h6>Last Updated:  {{.Params.lastupdate}}</h6>{{else}}<h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
-  <h5><a href="{{.Permalink}}"><span class="label label-info">Permalink</span></a>    Word Count:  <span class="badge">{{.WordCount}}</span>         Tags:  {{ range .Params.tags }}<span class="label label-danger"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>{{end}}
-
-  <hr/>
-  <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
-  </div>
-</section>
+<div class = "container" >
+  <article>
+    <header>
+      <h1 id="title">{{ .Title }}</h1>  {{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
+      {{ if eq .Type "page"}}<h6>Last Updated:  {{.Params.lastupdate}}</h6>{{else}}<h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
+      <h5><a href="{{.Permalink}}"><span class="label label-info">Permalink</span></a>    Word Count:  <span class="badge">{{.WordCount}}</span>         Tags:  {{ range .Params.tags }}<span class="label label-danger"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>{{end}}
+    </header>
+    <hr/>
+    <div>
+     {{ .Content }}
+    </div>
+  </article>
 </div>
 {{ partial "gallery.html" . }}
-{{ if eq .Type "page"}}{{else}}<div class = "container" role="pagination">
+{{ if eq .Type "page"}}{{else}}<div class = "container" >
   <nav>
     <ul class="pager">
       {{if .PrevInSection}}<li class="previous"><a href="{{.PrevInSection.Permalink}}"><span aria-hidden="true">&larr;</span> Previous</a></li>{{else}}<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>{{end}}
@@ -24,7 +23,7 @@
   </nav>
 </div>{{end}}
 {{ if eq .Params.comments "true"}}<hr />
-<div class = "container" role="comments">
+<div class = "container">
 {{ template "_internal/disqus.html" . }}
 </div>{{end}}
 {{ partial "footer.html" . }}

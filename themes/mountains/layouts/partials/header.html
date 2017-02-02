@@ -32,11 +32,6 @@
     <meta name="twitter:image:src" content="{{ index . 0 }}"/>
     {{ else }}<meta name="twitter:card" content="summary"/>
     <meta name="twitter:image:src" content="{{$image}}"/>{{ end }}
-    <!-- Schema.org markup -->
-    <meta itemprop="name" content="{{ .Title }}">
-    <meta itemprop="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}">
-    {{ with .Params.images }}{{ range first 6 . }}<meta itemprop="image" content="{{ . }}">{{ end }}{{ end }}
-    <meta itemprop="wordCount" content="{{ .WordCount }}">
 
     <link rel="icon" href="/images/favicon.ico">
 
@@ -57,4 +52,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     {{ "<![endif]-->" | safeHTML }}
     {{- block "css" . -}}{{end}}
+    {{ if .Params.music}}{{ $cdn := .Site.Params.musiccdn }}{{ range .Params.playlist}}{{range .songs }}
+        <meta property="og:audio" content="{{$cdn}}{{.url}}">
+        <meta property="og:title" content="{{.title}}">{{end}}{{end}}{{end}}
   </head>

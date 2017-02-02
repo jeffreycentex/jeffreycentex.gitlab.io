@@ -1,36 +1,21 @@
-{{- define "javascript" -}}<script src="https://cdn.bootcss.com/aplayer/1.5.8/APlayer.min.js"></script>
-<script> var player = new APlayer({ element: document.getElementById('player'), narrow: false, autoplay: false,
-    showlrc: false, mutex: true, theme: '#000000', mode: 'random',
-    music: [ {{ $cdn := .Site.Params.musiccdn }}{{ $group := .Params.music}}{{$coverart := .Params.coverart}}
-    {{ range .Params.playlist}}{{range .songs }}
-        { title: '{{.title}}', author: '{{ $group }}', url: '{{  $cdn }}{{ .url }}', pic: '{{ $coverart}}'  },
-    {{end}}{{end}}
-    ]}); </script>
-{{end}}
-{{- define "css" -}}{{ $cdn := .Site.Params.musiccdn }}
-{{ range .Params.playlist}}{{range .songs }}
-    <meta property="og:audio" content="{{$cdn}}{{.url}}">
-    <meta property="og:title" content="{{.title}}">{{end}}{{end}}{{end}}
-
 {{ partial "header.html" . }}
 {{ partial "body.html" . }}
-<div class = "container" role="main">
-<section id="main">
+<div class = "container" >
+<article>
+  <header>
   <h1 id="title">{{ .Title }}</h1>  {{ $dateFormat := default "Monday, January 2, 2006" (index .Site.Params "date_format") }}
   <h5><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format $dateFormat }}</time></h5>
   <h5><a href="{{.Permalink}}"><span class="label label-info">Permalink</span></a>    Word Count:  <span class="badge">{{.WordCount}}</span>         Tags:  {{ range .Params.tags }}<span class="label label-danger"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span> {{ end }}</h5>
   <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
-        <hr/>
-        <div id="player" class="aplayer panel panel-primary"></div>
+   {{ .Content }}
+    <hr/>
+    <div id="player" class="aplayer panel panel-primary"></div>
   </div>
-</section>
+</article>
 </div>
 {{ partial "gallery.html" . }}
 <hr />
-{{ if eq .Type "page"}}{{else}}<div class = "container" role="pagination">
+{{ if eq .Type "page"}}{{else}}<div class = "container" >
   <nav>
     <ul class="pager">
       {{if .PrevInSection}}<li class="previous"><a href="{{.PrevInSection.Permalink}}"><span aria-hidden="true">&larr;</span> Previous</a></li>{{else}}<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>{{end}}
@@ -38,7 +23,7 @@
     </ul>
   </nav>
 </div>{{end}}
-<div class = "container" role="comments">
+<div class = "container" >
 {{ template "_internal/disqus.html" . }}
 </div>
 {{ partial "footer.html" . }}

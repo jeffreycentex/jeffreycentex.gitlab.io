@@ -23,7 +23,7 @@ googleAnalytics = "UA-50848309-1"
   banner = "/images/galaxy_banner.jpg"
   slogan = "An intrepid adventurer in the Game of Life."
   copyright = "This site is copyrighted &copy; 2017 by Jeffrey Randow."
-  license = "This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/''>Creative Commons Attribution 4.0 International License</a>."
+  license = "This work is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>."
 
 [params.author]
   name = "Jeffrey Randow"
