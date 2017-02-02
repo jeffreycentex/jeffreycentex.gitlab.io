@@ -47,7 +47,6 @@ googleAnalytics = "UA-50848309-1"
   stackoverflow   = "1445912"
   quora           = "Jeffrey-Randow-1"
   fitbit          = "2G4MPX"
-  youtube         = "jeffreycentex"
 
 [taxonomies]
   tag = "tags"
