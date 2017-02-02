@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "https://jeffreycentex.gitlab.io"
+baseurl = "https://jeffreycentex.org"
 languageCode = "en-us"
 title = "Jeffreys Ruminations"
 theme = "mountains"
