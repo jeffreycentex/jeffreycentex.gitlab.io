@@ -19,55 +19,21 @@ Also note that the videos were **not** made with a GoPro.  I used my simple came
 
 The first video is what halftime looks like from my perspective.  I was on the North 15 Yard Line leading a curl from the East sideline.  **Note for those of you who have never experienced marching band, the phasing issues you hear while I am marching is common and due to how sound echoes back in the stadium.  At first, it seems disorienting, but you do get used to it.**
 
-<iframe
-  width="560"
-  height="315"
-  src="http://www.youtube.com/embed/ugNnBzQ-9Po"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-
-
+{{<youtube ugNnBzQ-9Po >}}
 What was funny is that I was not the only person to do this.  A snare drummer also strapped a camera on and video taped halftime.  I say this is funny because we were on the same line and I can see him and his camera from my video and he can see me and my camera from his.  So here is his video for comparison:
 
-<iframe
-  width="560"
-  height="315"
-  src="http://www.youtube.com/embed/ColoxyOBOrw"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-
+{{< youtube ColoxyOBOrw >}}
 
 The next video was the march from Music Building East to the Stadium including the Ramp Climb from hell.  
 
-<iframe
-  width="560"
-  height="315"
-  src="http://www.youtube.com/embed/Fsx4X3py7VQ"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-
+{{< youtube Fsx4X3py7VQ >}}
 
 The next video was my recording of the Longhorn Band Pre-Game show.  Please excuse my "sucky" singing.  Not used to people actually singing Deep in the Heart of Texas.  
 
-<iframe
-  width="560"
-  height="315"
-  src="http://www.youtube.com/embed/rSWF4OmicKA"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+{{< youtube rSWF4OmicKA >}}
 
 The final video is of the entire halftime show taken by someone in the crowd.
 
-<iframe
-  width="560"
-  height="315"
-  src="http://www.youtube.com/embed/I_ZGFUVL4PU"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+{{< youtube I_ZGFUVL4PU >}}
 
 Will I do it again?  Yes.  I had fun.  It was good exercise.  I will try to get more people that I know to go too...
