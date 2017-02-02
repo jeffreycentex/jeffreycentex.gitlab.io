@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "https://jeffreycentex.org"
+baseurl = "https://www.jeffreyrandow.org"
 languageCode = "en-us"
 title = "Jeffreys Ruminations"
 theme = "mountains"
@@ -13,7 +13,7 @@ googleAnalytics = "UA-50848309-1"
 [params]
   site_name = "Jeffreys Ruminations"
   description = "The personal blog of Jeffrey Randow, New Braunfels, TX"
-  geo_position = "29.4; -98.1"
+  geo_position = "29.7; -98.1"
   geo_placename = "New Braunfels, TX"
   geo_region = "US-TX"
   cdn = "https://s3.amazonaws.com/static.jeffreyrandow.org"
@@ -47,6 +47,7 @@ googleAnalytics = "UA-50848309-1"
   stackoverflow   = "1445912"
   quora           = "Jeffrey-Randow-1"
   fitbit          = "2G4MPX"
+  youtube         = "jeffreycentex"
 
 [taxonomies]
   tag = "tags"

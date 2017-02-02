@@ -9,8 +9,8 @@
     <meta property="article:author" content="https://www.facebook.com/{{ .Site.Params.social.facebook }}" />
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
-    {{- if .Site.Params.google_site_verification -}}<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}">{{end}}
-    {{- if .Site.Params.bing_site_verification -}}<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}">{{end}}
+    {{ if .Site.Params.google_site_verification -}}<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}">{{end}}
+    {{ if .Site.Params.bing_site_verification -}}<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}">{{end}}
 
     {{ if .Site.Params.geo_position -}}<meta name="geo.position" content="{{.Site.Params.geo_position}}">
     <meta name="geo.placename" content = "{{.Site.Params.geo_placename}}">
@@ -31,7 +31,7 @@
     {{ with .Params.images }}<meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image:src" content="{{ index . 0 }}"/>
     {{ else }}<meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image:src" content="{{$image}}"/>{{ end }}
+    <meta name="twitter:image:src" content="{{.baseurl}}{{$image}}"/>{{ end }}
 
     <link rel="icon" href="/images/favicon.ico">
 
