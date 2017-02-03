@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "https://www.jeffreyrandow.org"
+baseURL = "https://www.jeffreyrandow.org"
 languageCode = "en-us"
 title = "Jeffreys Ruminations"
 theme = "mountains"
