@@ -15,4 +15,6 @@ I do plan on posting on both personal as well as technical content.  One focus t
 
 Thank you all for your support over the years.
 
-Update 1:  Removed Disqus.  Lots of ad trackers.
+Update 1:  Removed Disqus.  Lots of ad trackers cluttering up the Network inspection tab.  I'm aiming for privacy, so it should be private.
+
+Update 2:  Added pages for /tags/ and /categories/.  Hugo 18.1 still has some errors that cause certain taxonomy pages to not render properly.  I'm hoping that adding the taxonomy term lists will prompt it to do so.  Otherwise you'll have to wait until Hugo 19.0 (hopefully) to have reliable page generation.  I have a bug in the hugo issue tracker on github.

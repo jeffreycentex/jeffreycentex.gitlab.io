@@ -25,6 +25,8 @@
               <ul class="dropdown-menu">
                 {{- range $name, $taxonomy := .Site.Taxonomies.categories -}}<li><a href="/categories/{{ $name | urlize }}/">{{ $name| humanize | title }}</a></li>
                 {{ end }}
+                <li role="separator" class="divider"></li>
+                <li><a href="/tags/"><span class="fa fa-tags"></span>  Tags</a></li>
               </ul>
             </li>
           </ul>
