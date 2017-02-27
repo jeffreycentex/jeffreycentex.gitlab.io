@@ -1,10 +1,16 @@
-image: alpine:3.4
+image: alpine:3.5
 
 before_script:
   - apk update && apk add openssl
-  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_linux-64bit.tgz
-  - tar xf hugo_0.19_linux-64bit.tgz && cp ./hugo /usr/bin
+  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Linux-64bit.tar.gz
+  - tar xf hugo_0.19_Linux-64bit.tar.gz --strip-components=1 && mv hugo_0.19_linux_amd64 hugo && cp ./hugo /usr/bin
   - hugo version
+
+test:
+  script:
+  - hugo
+  except:
+  - master
 
 pages:
   script:
