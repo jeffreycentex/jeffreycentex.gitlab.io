@@ -1,4 +1,10 @@
-image: publysher/hugo
+image: alpine:3.4
+
+before_script:
+  - apk update && apk add openssl
+  - wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_linux-64bit.tgz
+  - tar xf hugo_0.19_linux-64bit.tgz && cp ./hugo /usr/bin
+  - hugo version
 
 pages:
   script:
