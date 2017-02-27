@@ -6,12 +6,6 @@ before_script:
   - tar xf hugo_0.19_Linux-64bit.tar.gz --strip-components=1 && mv hugo_0.19_linux_amd64 hugo && cp ./hugo /usr/bin
   - hugo version
 
-test:
-  script:
-  - hugo
-  except:
-  - master
-
 pages:
   script:
   - hugo
