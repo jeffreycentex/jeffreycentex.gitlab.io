@@ -12,4 +12,11 @@ You can also reach me on Google Hangouts via the same address.  Likewise for Fac
 
 If you are one of my students, my email address at GaTech is **j r a n d o w 3** - at - **g a t e c h** - dot - **e d u** (same rules apply)
 
+For the lighter side of things:
+
+XBox GamerTag:  wxstormer
+Steam Name:  nbtxdude
+Battle:  nbtxdude (I only play StarCraft 2.  No WOW or the like.  Though I do play Overdrive on the XB1)
+Curse Voice Chat:  wxstormer
+
 In real life, I'm rather hard to contact because I tend to stay away from the limelight and hide in the face of attention.  :)
