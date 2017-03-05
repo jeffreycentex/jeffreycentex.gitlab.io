@@ -28,7 +28,7 @@ googleAnalytics = "UA-50848309-1"
 [params.author]
   name = "Jeffrey Randow"
   description = "Hey.  I'm a IT/Developer/Infosec dude who works in San Antonio and lives in New Braunfels, TX.  I'm also a graduate student pursuing a MS CS from the Georgia Institute of Technology located in Atlanta, GA.  Musician at Heart.  Storm Chaser.  Gardener.  And Amateur Meteorologist."
-  image = "/images/jeffrey.jpg"
+  image = "https://s3.amazonaws.com/static.jeffreyrandow.org/images/jeffrey.jpg"
 
 [permalinks]
   post = "/:section/:title"
