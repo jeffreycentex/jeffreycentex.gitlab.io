@@ -5,15 +5,15 @@
         {{ if .Params.pgbanner }}<div class="item">
           <img src="{{.Params.pgbanner}}" alt="Site Banner Image">
           <div class="carousel-caption">
-            <h1>{{.Params.pgbanner_title}}</h1>
-            <h3>{{.Params.pgbanner_slogan}}</h3>
+            <h1 id="header">{{.Params.pgbanner_title}}</h1>
+            <h3 id="header">{{.Params.pgbanner_slogan}}</h3>
           </div>
         </div>
         {{else}}<div class="item active">
           <img src="{{.Site.Params.banner}}" alt="Site Banner Image">
           <div class="carousel-caption">
-            <h1>{{.Site.Params.site_name}}</h1>
-            <h3>{{.Site.Params.slogan}}</h3>
+            <h1 id="header">{{.Site.Params.site_name}}</h1>
+            <h3 id="header">{{.Site.Params.slogan}}</h3>
           </div>
         </div>{{ end }}
       </div>
